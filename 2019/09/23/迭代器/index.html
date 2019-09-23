@@ -13,6 +13,13 @@
     
 
     
+        <meta name="description" content="迭代器可迭代对象Iterable
+可以直接作用于for循环的对象被称为迭代对象（Iterable）。
+迭代对象有两大类 集合类型（序列sequence和字典dict）和 生成器generator。
+可以使用 isinstance() 判断一个对象是否是迭代对象。
+
+注： 生成器不但可以作用于for循">
+    
 
     <!--Author-->
     
@@ -25,6 +32,13 @@
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="迭代器可迭代对象Iterable
+可以直接作用于for循环的对象被称为迭代对象（Iterable）。
+迭代对象有两大类 集合类型（序列sequence和字典dict）和 生成器generator。
+可以使用 isinstance() 判断一个对象是否是迭代对象。
+
+注： 生成器不但可以作用于for循">
     
 
     <!--Open Graph Site Name-->
@@ -51,7 +65,7 @@
 
     <!-- Title -->
     
-    <title>Archives - 淇水汤汤</title>
+    <title>淇水汤汤</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -153,127 +167,72 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Archives</h1>
+                <div class="post-heading">
+                    <h1>Untitled</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-09-23
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/09/23/生命/">
-        <h1 class="post-title archive">
-            生命
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h1><h2 id="可迭代对象Iterable"><a href="#可迭代对象Iterable" class="headerlink" title="可迭代对象Iterable"></a>可迭代对象Iterable</h2><ol>
+<li>可以直接作用于for循环的对象被称为迭代对象（Iterable）。</li>
+<li>迭代对象有两大类 集合类型（序列sequence和字典dict）和 生成器generator。</li>
+<li>可以使用 isinstance() 判断一个对象是否是迭代对象。</li>
+</ol>
+<p><strong>注： 生成器不但可以作用于for循环，还可以被next()函数不断调用并返回下一个值，直到最后抛出StopIteration错误表示无法继续返回下一个值。</strong></p>
+<h2 id="迭代器-1"><a href="#迭代器-1" class="headerlink" title="迭代器"></a>迭代器</h2><p>可以使用 next() 调用，并返回下一个值的对象称为迭代器（Iterator）。</p>
+<p><strong>注： 生成器都是迭代器，但集合类型（list/str/dict）不是迭代器，但可以使用内置函数 iter() 将其变成迭代器。</strong></p>
+<blockquote>
+<p>你可能会问，为什么list、dict、str等数据类型不是Iterator？</p>
+</blockquote>
+<blockquote>
+<p>这是因为Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过next()函数实现按需计算下一个数据，所以Iterator的计算是惰性的，只有在需要返回下一个数据时它才会计算。<br>Iterator甚至可以表示一个无限大的数据流，例如全体自然数。而使用list是永远不可能存储全体自然数的。</p>
+</blockquote>
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2019/09/23/序列/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/2019/09/23/列表生成式/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2019/09/23/函数/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2019/09/23/高阶函数/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2019/09/23/迭代器/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2019/09/23/hello-world/">
-        <h1 class="post-title archive">
-            Hello World
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-09-23
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />
